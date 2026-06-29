@@ -1,0 +1,29 @@
+# Environnement Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Fichiers médias et temporaires
+*.mp4
+*.mkv
+*.avi
+*.jpg
+*.png
+*.srt
+workspace/input/*
+workspace/output/*
+workspace/temp/*
+!workspace/**/.gitkeep
+
+# Logs
+*.log
+
+#Save preferences :
+config.json
