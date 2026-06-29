@@ -1,11 +1,15 @@
 import os
+import sys
 import re
 import subprocess
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-FFMPEG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ffmpeg.exe")
+if hasattr(sys, '_MEIPASS'):
+    FFMPEG_PATH = os.path.join(sys._MEIPASS, "ffmpeg.exe")
+else:
+    FFMPEG_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ffmpeg.exe")
 _current_process = None
 
 
